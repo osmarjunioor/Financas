@@ -19,7 +19,4 @@ with col3:
 with col4:
     gasto4 = st.text_input('De onde veio?', '')
 
-for row in range(1, 4):
-    for col in range(1, 5):
-        char = get_column_letter(col)
-        st.write(ws[char + str(row)].value)
+
