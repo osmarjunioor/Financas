@@ -1,11 +1,7 @@
 import streamlit as st
 import pandas as pd
-from openpyxl import load_workbook
-from openpyxl import Workbook
-from openpyxl.utils import get_column_letter 
 
-wb = load_workbook('spent.xlsx')
-ws = wb.active
+df = pd.read_csv("spent.csv")
 
 st.set_page_config(layout="wide")
 
