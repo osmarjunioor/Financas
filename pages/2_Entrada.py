@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('gasto.csv', header=None, delim_whitespace=True)
+df = pd.read_csv('content\gasto.csv')
 st.write(df)
 
 
