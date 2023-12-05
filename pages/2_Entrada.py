@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from openpyxl import Workbook, load_workbook
+from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter 
 
 wb = load_workbook('content\spent.xlsx')
