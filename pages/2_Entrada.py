@@ -16,4 +16,4 @@ with col2:
 with col3:
     gasto3 = st.text_input('Adicione a data da entrada:', '')
 with col4:
-    gasto4 = st.text_input('De onde veio?', '')
+    gasto4 = st.text_input('De onde veio??', '')
