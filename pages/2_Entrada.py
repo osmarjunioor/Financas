@@ -21,7 +21,7 @@ with st.form('my_form'):
 
 if submitted:
     new_data = {"Nome": name, "Valor": int(entrada), "Data": data, "Origem": origem}
-    df = df.append(new_data, ignore_index=True)
+    df = df.concat(new_data, ignore_index=True)
     df.to_csv('content/gasto.csv', index=False)
 
 st.write(df)
