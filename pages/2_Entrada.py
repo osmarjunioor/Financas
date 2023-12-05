@@ -4,7 +4,6 @@ import pandas as pd
 st.set_page_config(layout="wide")
 
 df = pd.read_csv('content/gasto.csv')
-#st.write(df)
 
 col1, col2, col3, col4 = st.columns(4)
 
