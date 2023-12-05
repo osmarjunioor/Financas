@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-from openpyxl import load_workbook
+from openpyxl import load_workbook, Workbook
 from openpyxl.utils import get_column_letter 
 
-wb = load_workbook('content\spent.xlsx')
+wb = load_workbook('spent.xlsx')
 ws = wb.active
 
 st.set_page_config(layout="wide")
