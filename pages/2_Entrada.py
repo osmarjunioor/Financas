@@ -16,6 +16,5 @@ with col3:
 with col4:
     origem = st.text_input('De onde veio?', '')
 
-add_data = st.form_submit_button(label="Submit")
-
+st.form_submit_button()
 st.write(df)
