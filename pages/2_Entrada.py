@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('gasto.csv')
+df = pd.read_csv('gasto.csv', header=None, delim_whitespace=True)
+st.write(df)
+
 
 st.set_page_config(layout="wide")
 
