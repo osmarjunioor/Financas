@@ -18,5 +18,8 @@ with col3:
     gasto3 = st.text_input('Adicione a data da entrada:', '')
 with col4:
     gasto4 = st.text_input('De onde veio?', '')
-    
-#teste123
+
+for row in range(1, 4):
+    for col in range(1, 5):
+        char = get_column_letter(col)
+        st.write(ws[char + str(row)].value)
