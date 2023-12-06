@@ -41,7 +41,7 @@ action = st.selectbox(
 )
 
 if action == "Adicione Gastos":
-    st.markdown("Enter the details of the new vendor below.")
+    st.markdown("Adicione informações sobre novos gastos.")
     with st.form(key="vendor_form"):
         company_name = st.text_input(label="Company Name*")
         business_type = st.selectbox(
