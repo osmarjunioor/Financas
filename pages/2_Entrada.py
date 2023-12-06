@@ -21,8 +21,8 @@ with st.form('my_form'):
     submitted = st.form_submit_button("Enviar")
 
 if submitted:
-    new_data = {"Nome": name, "Valor": int(entrada), "Data": data, "Origem": origem}
-    df = pd.concat(new_data, ignore_index=True)
+    new_data = {'Nome': name, 'Valor': int(entrada), 'Data': data, 'Origem': origem}
+    df = pd.concat([df, new_data], ignore_index=True)
     df.to_csv('content/gasto.csv')
 
 st.write(df)
