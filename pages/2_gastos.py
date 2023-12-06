@@ -33,14 +33,14 @@ existing_data = existing_data.dropna(how="all")
 action = st.selectbox(
     "Choose an Action",
     [
-        "Onboard New Vendor",
+        "1",
         "Update Existing Vendor",
         "View All Vendors",
         "Delete Vendor",
     ],
 )
 
-if action == "Onboard New Vendor":
+if action == "1":
     st.markdown("Enter the details of the new vendor below.")
     with st.form(key="vendor_form"):
         company_name = st.text_input(label="Company Name*")
