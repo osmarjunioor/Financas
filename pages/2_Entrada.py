@@ -22,8 +22,7 @@ with st.form('my_form'):
 
 if submitted:
     new_data = {'Nome': name, 'Valor': int(entrada), 'Data': data, 'Origem': origem}
-    df.append(new_data)
-    df = pd.concat(df)
+    df = pd.concat([df, new_data], ignore_index=True)
     df.to_csv('content/gasto.csv')
 
 st.write(df)
