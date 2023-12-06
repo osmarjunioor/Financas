@@ -40,7 +40,7 @@ action = st.selectbox(
     ],
 )
 
-if action == "Onboard New Vendor":
+if action == "Adicione Um Novo Gasto":
     st.markdown("Enter the details of the new vendor below.")
     with st.form(key="vendor_form"):
         company_name = st.text_input(label="Company Name*")
