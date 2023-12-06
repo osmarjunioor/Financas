@@ -33,7 +33,7 @@ existing_data = existing_data.dropna(how="all")
 action = st.selectbox(
     "Choose an Action",
     [
-        "Onboard New Vendor",
+        "Adicione Um Novo Gasto",
         "Update Existing Vendor",
         "View All Vendors",
         "Delete Vendor",
