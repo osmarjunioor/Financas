@@ -23,7 +23,7 @@ PRODUCTS = [
     "Other",
 ]
 
-# Establishing a Google Sheets connections
+# Establishing a Google Sheets connection
 conn = st.experimental_connection("gsheets", type=GSheetsConnection)
 
 # Fetch existing vendors data
