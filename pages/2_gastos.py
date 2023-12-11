@@ -13,14 +13,15 @@ BUSINESS_TYPES = [
     "Shopping",
     "Restaurante",
     "Loja",
+    "Construção",
     "Outros",
 ]
 PRODUCTS = [
-    "Electronics",
-    "Apparel",
-    "Groceries",
-    "Software",
-    "Other",
+    "Electronicos",
+    "Roupa",
+    "Comida",
+    "Construção",
+    "Outros",
 ]
 
 # Establishing a Google Sheets connection
