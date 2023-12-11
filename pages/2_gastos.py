@@ -102,8 +102,8 @@ elif action == "Update Existing Vendor":
             options=PRODUCTS,
             default=vendor_data["Products"].split(", "),
         )
-        years_in_business = st.slider(
-            "Years in Business", 0, 50, int(vendor_data["YearsInBusiness"])
+        #years_in_business = st.slider(
+         #   "Years in Business", 0, 50, int(vendor_data["YearsInBusiness"])
         )
         onboarding_date = st.date_input(
             label="Onboarding Date", value=pd.to_datetime(vendor_data["OnboardingDate"])
