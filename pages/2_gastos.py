@@ -35,7 +35,7 @@ action = st.selectbox(
     "Escolha uma Ação",
     [
         "Adicione Gastos",
-        "Update Existing Vendor",
+        #"Update Existing Vendor",
         "View All Vendors",
         "Delete Vendor",
     ],
