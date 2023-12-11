@@ -9,11 +9,11 @@ st.title("Portal de Gastos e Finanças")
 
 # Constants
 BUSINESS_TYPES = [
-    "Manufacturer",
-    "Distributor",
-    "Wholesaler",
-    "Retailer",
-    "Service Provider",
+    "Mercado",
+    "Shopping",
+    "Restaurante",
+    "Loja",
+    "Outros",
 ]
 PRODUCTS = [
     "Electronics",
