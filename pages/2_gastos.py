@@ -45,7 +45,7 @@ if action == "Adicione Gastos":
     with st.form(key="vendor_form"):
         company_name = st.text_input(label="Nome do local*")
         business_type = st.selectbox(
-            "Business Type*", options=BUSINESS_TYPES, index=None
+            "Tipo do Local*", options=BUSINESS_TYPES, index=None
         )
         products = st.multiselect("Products Offered", options=PRODUCTS)
         years_in_business = st.slider("Years in Business", 0, 50, 5)
