@@ -50,8 +50,8 @@ if action == "Adicione Gastos":
         )
         products = st.multiselect("Produto Comprado", options=PRODUCTS)
         #years_in_business = st.slider("Years in Business", 0, 50, 5)
-        onboarding_date = st.date_input(label="Onboarding Date")
-        additional_info = st.text_area(label="Additional Notes")
+        onboarding_date = st.date_input(label="Data da Compra")
+        additional_info = st.text_area(label="Observações")
 
         st.markdown("**required*")
         submit_button = st.form_submit_button(label="Submit Vendor Details")
