@@ -35,7 +35,7 @@ action = st.selectbox(
     "Escolha uma Ação",
     [
         "Adicione Gastos",
-        #"Update Existing Vendor",
+        "Update Existing Vendor",
         "View All Vendors",
         "Delete Vendor",
     ],
@@ -77,7 +77,7 @@ if action == "Adicione Gastos":
                 updated_df = pd.concat([existing_data, vendor_data], ignore_index=True)
                 conn.update(worksheet="Vendors", data=updated_df)
                 st.success("Vendor details successfully submitted!")
-'''
+
 elif action == "Update Existing Vendor":
     st.markdown("Select a vendor and update their details.")
 
@@ -144,7 +144,7 @@ elif action == "Update Existing Vendor":
                     [existing_data, updated_vendor_data], ignore_index=True
                 )
                 conn.update(worksheet="Vendors", data=updated_df)
-                st.success("Vendor details successfully updated!")'''
+                st.success("Vendor details successfully updated!")
 
 # View All Vendors
 elif action == "View All Vendors":
