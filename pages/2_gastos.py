@@ -49,7 +49,7 @@ if action == "Adicione Gastos":
             "Tipo do Local*", options=BUSINESS_TYPES, index=None
         )
         products = st.multiselect("Produto Comprado", options=PRODUCTS)
-        #years_in_business = st.slider("Years in Business", 0, 50, 5)
+        years_in_business = st.slider("Years in Business", 0, 50, 5)
         onboarding_date = st.date_input(label="Data da Compra")
         additional_info = st.text_area(label="Observações")
 
@@ -68,7 +68,7 @@ if action == "Adicione Gastos":
                             "CompanyName": company_name,
                             "BusinessType": business_type,
                             "Products": ", ".join(products),
-                            #"YearsInBusiness": years_in_business,
+                            "YearsInBusiness": years_in_business,
                             "OnboardingDate": onboarding_date.strftime("%Y-%m-%d"),
                             "AdditionalInfo": additional_info,
                         }
@@ -102,9 +102,9 @@ elif action == "Update Existing Vendor":
             options=PRODUCTS,
             default=vendor_data["Products"].split(", "),
         )
-        #years_in_business = st.slider(
-         #   "Years in Business", 0, 50, int(vendor_data["YearsInBusiness"])
-        #)
+        years_in_business = st.slider(
+            "Years in Business", 0, 50, int(vendor_data["YearsInBusiness"])
+        )
         onboarding_date = st.date_input(
             label="Data da Compra", value=pd.to_datetime(vendor_data["OnboardingDate"])
         )
