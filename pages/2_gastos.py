@@ -47,7 +47,7 @@ if action == "Adicione Gastos":
         business_type = st.selectbox(
             "Tipo do Local*", options=BUSINESS_TYPES, index=None
         )
-        products = st.multiselect("Products Offered", options=PRODUCTS)
+        products = st.multiselect("Produto Comprado", options=PRODUCTS)
         years_in_business = st.slider("Years in Business", 0, 50, 5)
         onboarding_date = st.date_input(label="Onboarding Date")
         additional_info = st.text_area(label="Additional Notes")
