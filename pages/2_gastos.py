@@ -68,7 +68,7 @@ if action == "Adicione Gastos":
                             "CompanyName": company_name,
                             "BusinessType": business_type,
                             "Products": ", ".join(products),
-                            "YearsInBusiness": years_in_business,
+                            #"YearsInBusiness": years_in_business,
                             "OnboardingDate": onboarding_date.strftime("%Y-%m-%d"),
                             "AdditionalInfo": additional_info,
                         }
