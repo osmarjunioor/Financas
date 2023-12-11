@@ -106,10 +106,10 @@ elif action == "Update Existing Vendor":
          #   "Years in Business", 0, 50, int(vendor_data["YearsInBusiness"])
         #)
         onboarding_date = st.date_input(
-            label="Onboarding Date", value=pd.to_datetime(vendor_data["OnboardingDate"])
+            label="Data da Compra", value=pd.to_datetime(vendor_data["OnboardingDate"])
         )
         additional_info = st.text_area(
-            label="Additional Notes", value=vendor_data["AdditionalInfo"]
+            label="Observações", value=vendor_data["AdditionalInfo"]
         )
 
         st.markdown("**required*")
